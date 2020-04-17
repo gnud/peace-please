@@ -1,0 +1,25 @@
+{
+
+  "manifest_version": 2,
+  "name": "Peace please",
+  "version": "1.0",
+
+  "description": "Remove any undesired notice for people who want to do their work",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["peaceapp.js"]
+    }
+  ]
+
+}
+
